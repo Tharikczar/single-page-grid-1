@@ -1,0 +1,138 @@
+
+$Cyan: hsl(179, 62%, 43%);
+$Bright-Yellow: hsl(71, 73%, 54%);
+$Light-Gray: hsl(204, 43%, 93%);
+$Grayish-Blue: hsl(218, 22%, 67%);
+$my-font-family: 'Karla', sans-serif;
+$my-Font-size: 16px;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/*
+.frame{
+    position: relative;
+}
+*/
+body{
+    background-color: $Light-Gray;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    display: grid;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    grid-template-columns: 1fr 1fr ;
+    font-family: $my-font-family;
+    max-width: 600px;
+    border-radius: 10px;
+
+
+    .grid-item-1 {
+        
+        background-color: white;
+        color: $Grayish-Blue;
+        padding: 20px;
+        grid-area: 1 / 1 / span 1 / span 2 ;
+
+        
+        
+    }
+    .grid-item-2 {
+        
+        background-color: $Cyan;
+        color: $Light-Gray;
+        padding: 20px;
+    }
+
+    .grid-item-3 {
+        background-color: $Cyan;
+        color: $Light-Gray;
+        padding: 20px;
+        opacity : 0.9;
+
+    }
+    
+
+    
+}
+
+.header-1 {
+    font-weight: 700;
+    color: $Cyan; 
+}
+
+p{
+    font-size: 16px;
+    text-align: left;
+
+}
+
+.pry-yellow {
+    color: $Bright-Yellow;
+}
+
+.header2{
+    color: white;
+    font-weight: 700;
+    font-family: $my-font-family;
+    
+}
+
+span{
+    position: relative;
+    top: -50px;
+    left: 70px;
+    opacity: 0.6;
+}
+
+.paragraph {
+    position: relative;
+    top: -36px;
+}
+
+.button {
+    position: relative;
+    background-color: $Bright-Yellow;
+    color: white;
+    font-size: $my-font-family;
+    border: 2px solid $Bright-Yellow;
+    height: 50px;
+    width: auto;
+    border-radius: 5px;
+    text-align: center;
+    top: -21px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.19);
+    
+}
+.signup {
+    padding-left: 87px;
+    margin-top: 13px;
+}
+.last {
+    line-height: 150%;
+}
+
+
+@media screen and (max-width: 375px) {
+    .container {
+    grid-template-rows: 1fr 1fr 1fr; 
+    }
+    .grid-item-1 {
+        grid-row: 1 / 2;
+    }
+    .grid-item-2 {
+        grid-row: 2 / 3;
+
+    }
+    .grid-item-3{
+         grid-row: 3 / 4;   
+    }
+}
+
